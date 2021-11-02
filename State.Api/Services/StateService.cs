@@ -1,9 +1,10 @@
-﻿using System.Globalization;
+﻿using State.Api.Interfaces;
+using System.Globalization;
 using System.Text;
 
 namespace State.Api.Services
 {
-    public class StateService
+    public class StateService : IStateService
     {
         private readonly string[] _states = { "Acre",  "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso",
                                               "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte",

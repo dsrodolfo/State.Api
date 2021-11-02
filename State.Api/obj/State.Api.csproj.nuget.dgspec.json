@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rodolfo\\source\\repos\\State.Api\\State.Api\\State.Api.csproj": {}
+    "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Api\\State.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rodolfo\\source\\repos\\State.Api\\State.Api\\State.Api.csproj": {
+    "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Api\\State.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rodolfo\\source\\repos\\State.Api\\State.Api\\State.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Api\\State.Api.csproj",
         "projectName": "State.Api",
-        "projectPath": "C:\\Users\\Rodolfo\\source\\repos\\State.Api\\State.Api\\State.Api.csproj",
+        "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Api\\State.Api.csproj",
         "packagesPath": "C:\\Users\\Rodolfo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rodolfo\\source\\repos\\State.Api\\State.Api\\obj\\",
+        "outputPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
