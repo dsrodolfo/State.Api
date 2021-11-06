@@ -25,7 +25,17 @@ app.MapGet("/State/getAll", ([FromServices] StateService stateService) =>
 app.MapGet("/State/getAll/{name}", ([FromServices] StateService stateService, string name) =>
 {
     string[] states = stateService.GetAllStatesByName(name);
+
     return states.Length != 0 ? Results.Ok(states) : Results.NotFound();
+});
+
+app.MapGet("/State/flags/download", ([FromServices] StateService stateService) =>
+{
+    string zipFileDirectory = stateService.DownloadFlags();
+
+    return !string.IsNullOrWhiteSpace(zipFileDirectory)? 
+        Results.File(zipFileDirectory, "application/zip", "brazilian-state-flags.zip") : 
+        Results.NotFound();
 });
 
 app.Run();
