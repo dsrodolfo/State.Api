@@ -1,4 +1,7 @@
-## State.Api
+ <h1 align="center">State.Api</h1>
+
+![brazilian-states-logo](https://user-images.githubusercontent.com/25781203/140656946-9dfbb23c-d47f-45fd-8f5b-b63a2656c0d0.jpg)
+
 Brazilian States
 
 ## Endpoints
