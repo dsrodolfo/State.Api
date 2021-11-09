@@ -18,10 +18,12 @@ The API has 3 endpoints:
      <td>C#</td>  
      <td>.NET</td>  
      <td>Swagger</td>  
+	 <td>xUnit</td>
   </tr>
   <tr>
      <td>10.0</td>  
      <td>6.0</td> 
      <td>6.2.3</td>  
+	 <td>2.4.1</td>  
   </tr>
 </table>

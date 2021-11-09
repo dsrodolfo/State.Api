@@ -39,3 +39,5 @@ app.MapGet("/State/flags/download", ([FromServices] StateService stateService) =
 });
 
 app.Run();
+
+public partial class Program { }
