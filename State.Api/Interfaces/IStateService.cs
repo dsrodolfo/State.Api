@@ -4,5 +4,6 @@
     {
         string[] GetAllStates();
         string[] GetAllStatesByName(string name);
+        string DownloadFlags();
     }
 }
