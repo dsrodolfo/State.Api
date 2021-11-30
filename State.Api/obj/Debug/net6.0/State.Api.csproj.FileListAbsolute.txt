@@ -143,8 +143,6 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\r
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\Microsoft.AspNetCore.WebSockets.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\Microsoft.AspNetCore.WebUtilities.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\Microsoft.CSharp.dll
-C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Ini.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Xml.dll
@@ -174,7 +172,6 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\r
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\System.Buffers.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\System.Collections.Concurrent.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\System.Collections.dll
-C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\System.Collections.Immutable.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\System.Collections.NonGeneric.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\System.Collections.Specialized.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\System.ComponentModel.Annotations.dll
@@ -319,8 +316,15 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\r
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\System.Xml.XPath.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\System.Xml.XPath.XDocument.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\refs\WindowsBase.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Testing.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.AspNetCore.TestHost.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
@@ -348,9 +352,12 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\M
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\System.Collections.Immutable.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\System.IO.Pipelines.dll

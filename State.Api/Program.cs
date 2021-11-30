@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using State.Api.Interfaces;
+using State.Api.Repositories;
 using State.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IStateService, StateService>();
+var connectionString = builder.Configuration.GetSection("DbContextSettings")["ConnectionString"];
+builder.Services.AddDbContext<StateDbContext>(options => 
+    options.UseNpgsql(connectionString));
 
 var app = builder.Build();
 
