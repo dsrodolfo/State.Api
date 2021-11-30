@@ -1,6 +1,6 @@
  <h1 align="center">State.Api</h1>
 
-![brazilian-states-logo](https://user-images.githubusercontent.com/25781203/140656946-9dfbb23c-d47f-45fd-8f5b-b63a2656c0d0.jpg)
+![brazilian-states-logo](https://user-images.githubusercontent.com/25781203/141661896-50fe54e4-106c-4f71-8672-b70acad809e1.jpg)
 
 Brazilian States
 
@@ -18,12 +18,12 @@ The API has 3 endpoints:
      <td>C#</td>  
      <td>.NET</td>  
      <td>Swagger</td>  
-	 <td>xUnit</td>
+     <td>xUnit</td>
   </tr>
   <tr>
      <td>10.0</td>  
      <td>6.0</td> 
      <td>6.2.3</td>  
-	 <td>2.4.1</td>  
+     <td>2.4.1</td>  
   </tr>
 </table>
