@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<IStateService, StateService>();
+builder.Services.AddTransient<IStateService, StateService>();
+builder.Services.AddTransient<StateRepository>();
 var connectionString = builder.Configuration.GetSection("DbContextSettings")["ConnectionString"];
 builder.Services.AddDbContext<StateDbContext>(options => 
     options.UseNpgsql(connectionString));
@@ -25,7 +26,7 @@ app.UseSwaggerUI();
 
 app.MapGet("/State/getAll", ([FromServices] IStateService stateService) =>
 {
-    return stateService.GetAllStates();
+    return stateService.GetAllStateEntity();
 });
 
 app.MapGet("/State/getAll/{name}", ([FromServices] IStateService stateService, string name) =>
