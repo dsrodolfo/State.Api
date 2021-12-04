@@ -1,12 +1,11 @@
-﻿using State.Api.Entities;
+﻿using State.Api.Models.Response;
 
 namespace State.Api.Interfaces
 {
     public interface IStateService
     {
-        string[] GetAllStates();
-        IEnumerable<StateEntity> GetAllStateEntity();
-        string[] GetAllStatesByName(string name);
+        IEnumerable<StateResponse> GetAllStates();
+        IEnumerable<StateResponse> GetAllStatesByName(string name);
         string DownloadFlags();
     }
 }

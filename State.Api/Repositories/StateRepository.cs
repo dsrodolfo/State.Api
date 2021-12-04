@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using State.Api.Entities;
+﻿using State.Api.Entities;
 
 namespace State.Api.Repositories
 {

@@ -1,6 +1,8 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using State.Api.Interfaces;
+using State.Api.Mappings;
 using State.Api.Repositories;
 using State.Api.Services;
 
@@ -8,11 +10,22 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddTransient<IStateService, StateService>();
 builder.Services.AddTransient<StateRepository>();
+
 var connectionString = builder.Configuration.GetSection("DbContextSettings")["ConnectionString"];
 builder.Services.AddDbContext<StateDbContext>(options => 
     options.UseNpgsql(connectionString));
+
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new StateProfile());
+});
+
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
+builder.Services.AddMvc();
 
 var app = builder.Build();
 
@@ -26,14 +39,14 @@ app.UseSwaggerUI();
 
 app.MapGet("/State/getAll", ([FromServices] IStateService stateService) =>
 {
-    return stateService.GetAllStateEntity();
+    return stateService.GetAllStates();
 });
 
 app.MapGet("/State/getAll/{name}", ([FromServices] IStateService stateService, string name) =>
 {
-    string[] states = stateService.GetAllStatesByName(name);
+    var states = stateService.GetAllStatesByName(name);
 
-    return states.Length != 0 ? Results.Ok(states) : Results.NotFound();
+    return states.Count() != 0 ? Results.Ok(states) : Results.NotFound();
 });
 
 app.MapGet("/State/flags/download", ([FromServices] IStateService stateService) =>

@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "JHCbkYTnNNDto9q68eJ3iB1bsPrYODAvKhI/lWEqhdAzTxaCBNy8qpcT9CuWKTaQpGzc2p2fO1TUu6UKFiyozw==",
+  "dgSpecHash": "F/A1kOtv0xf9rw5xNxgxiYcF6Thj9zmBnFmkuQY+r1pnnONSLN78P1c31CdCPcxjxS4YF735qdthP9SVCDX+ZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Api\\State.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Rodolfo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\6.0.0\\microsoft.aspnetcore.mvc.testing.6.0.0.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\microsoft.aspnetcore.testhost\\6.0.0\\microsoft.aspnetcore.testhost.6.0.0.nupkg.sha512",
+    "C:\\Users\\Rodolfo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
@@ -55,6 +57,7 @@
     "C:\\Users\\Rodolfo\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\system.io.pipelines\\6.0.0\\system.io.pipelines.6.0.0.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Rodolfo\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\Rodolfo\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"

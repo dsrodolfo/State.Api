@@ -1,25 +1,40 @@
-﻿using State.Api.Entities;
+﻿using AutoMapper;
+using State.Api.Entities;
+using State.Api.Extensions;
 using State.Api.Interfaces;
+using State.Api.Models.Response;
 using State.Api.Repositories;
-using System.Globalization;
 using System.IO.Compression;
 using System.Reflection;
-using System.Text;
 
 namespace State.Api.Services
 {
     public class StateService : IStateService
     {
-        private readonly string[] _states = { "Acre",  "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal", "Espírito Santo", "Goiás",
-                                              "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", 
-                                              "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins"
-                                            };
-
         private readonly StateRepository _stateRepository;
+        private readonly IMapper _mapper;
 
-        public StateService(StateRepository stateRepository)
+        public StateService(StateRepository stateRepository, IMapper mapper)
         {
             _stateRepository = stateRepository;
+            _mapper = mapper;
+        }
+
+        public IEnumerable<StateResponse> GetAllStates()
+        {
+            IEnumerable<StateEntity> states = _stateRepository.GetAllStates();
+
+            return states.Select(obj => _mapper.Map<StateResponse>(obj)); ;
+        }
+        public IEnumerable<StateResponse> GetAllStatesByName(string name)
+        {
+            IEnumerable<StateEntity> states = _stateRepository.GetAllStates();
+            IEnumerable<StateEntity> selectedStates = states.Where(x => x.Name
+                                                                 .ToLower()
+                                                                 .RemoveDiacritics()
+                                                                 .StartsWith(name.ToLower().RemoveDiacritics()));
+
+            return selectedStates.Select(st => _mapper.Map<StateResponse>(st));
         }
 
         public string DownloadFlags()
@@ -40,27 +55,6 @@ namespace State.Api.Services
             }
 
             return zipFileDirectory;
-        }
-
-        public string[] GetAllStates() => _states.OrderBy(state => state).ToArray();
-
-        public IEnumerable<StateEntity> GetAllStateEntity() => _stateRepository.GetAllStates();
-
-        public string[] GetAllStatesByName(string name)
-        {
-            string formattedName = RemoveDiacritics(name.ToLower().Trim());
-
-            return _states.Where(state => RemoveDiacritics(state.ToLower()).StartsWith(formattedName))
-                          .OrderBy(state => state)
-                          .ToArray();
-        }
-
-        private string RemoveDiacritics(string text)
-        {
-            var clearText = new string(text.Normalize(NormalizationForm.FormD)
-                                           .Where(ch => char.GetUnicodeCategory(ch) != UnicodeCategory.NonSpacingMark)
-                                           .ToArray());
-            return clearText.Trim();
         }
     }
 }

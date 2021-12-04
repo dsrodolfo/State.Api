@@ -12,7 +12,6 @@ namespace State.Api.Repositories
         }
 
         public DbSet<StateEntity> State { get; set; }
-        public DbSet<CountryEntity> Country { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
