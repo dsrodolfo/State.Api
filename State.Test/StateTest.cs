@@ -1,4 +1,6 @@
-﻿using System.Net;
+﻿using Newtonsoft.Json;
+using State.Api.Models.Response;
+using System.Net;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -14,8 +16,9 @@ namespace State.Api.Tests
             var client = stateApp.CreateClient();
             var response = client.GetAsync("/State/getAll");
             var result = response.Result.Content.ReadAsStringAsync().Result;
+            var stateResponse = JsonConvert.DeserializeObject<StateResponse[]>(result);
 
-            Assert.Equal(26, result.Split(',').Length);
+            Assert.Equal(27, stateResponse.Length);
         }
 
         [Fact]
@@ -26,8 +29,9 @@ namespace State.Api.Tests
             var client = stateApp.CreateClient();
             var response = client.GetAsync("/State/getAll/sao");
             var result = response.Result.Content.ReadAsStringAsync().Result;
+            var stateResponse = JsonConvert.DeserializeObject<StateResponse[]>(result);
 
-            Assert.Contains("São Paulo", result);
+            Assert.Single(stateResponse);
         }
 
         [Fact]

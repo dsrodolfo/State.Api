@@ -13,5 +13,7 @@ namespace State.Api.Entities
 
         [MaxLength(100)]
         public string Name { get; set; }
+
+        public int Population { get; set; }
     }
 }

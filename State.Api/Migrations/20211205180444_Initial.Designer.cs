@@ -11,8 +11,8 @@ using State.Api.Repositories;
 namespace State.Api.Migrations
 {
     [DbContext(typeof(StateDbContext))]
-    [Migration("20211202014926_SeedAllStateTable")]
-    partial class SeedAllStateTable
+    [Migration("20211205180444_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -22,24 +22,6 @@ namespace State.Api.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
-
-            modelBuilder.Entity("State.Api.Entities.CountryEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Country");
-                });
 
             modelBuilder.Entity("State.Api.Entities.StateEntity", b =>
                 {
@@ -54,6 +36,9 @@ namespace State.Api.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)");
 
+                    b.Property<int>("Population")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("State");
@@ -62,137 +47,164 @@ namespace State.Api.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Acre"
+                            Name = "Acre",
+                            Population = 906876
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Alagoas"
+                            Name = "Alagoas",
+                            Population = 3365351
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Amapá"
+                            Name = "Amapá",
+                            Population = 877613
                         },
                         new
                         {
                             Id = 4,
-                            Name = "Amazonas"
+                            Name = "Amazonas",
+                            Population = 4269995
                         },
                         new
                         {
                             Id = 5,
-                            Name = "Bahia"
+                            Name = "Bahia",
+                            Population = 14985284
                         },
                         new
                         {
                             Id = 6,
-                            Name = "Ceará"
+                            Name = "Ceará",
+                            Population = 9240580
                         },
                         new
                         {
                             Id = 7,
-                            Name = "Distrito Federal"
+                            Name = "Distrito Federal",
+                            Population = 3094325
                         },
                         new
                         {
                             Id = 8,
-                            Name = "Espírito Santo"
+                            Name = "Espírito Santo",
+                            Population = 4108508
                         },
                         new
                         {
                             Id = 9,
-                            Name = "Goiás"
+                            Name = "Goiás",
+                            Population = 7206589
                         },
                         new
                         {
                             Id = 10,
-                            Name = "Maranhão"
+                            Name = "Maranhão",
+                            Population = 7153262
                         },
                         new
                         {
                             Id = 11,
-                            Name = "Mato Grosso"
+                            Name = "Mato Grosso",
+                            Population = 3567234
                         },
                         new
                         {
                             Id = 12,
-                            Name = "Mato Grosso do Sul"
+                            Name = "Mato Grosso do Sul",
+                            Population = 2839188
                         },
                         new
                         {
                             Id = 13,
-                            Name = "Minas Gerais"
+                            Name = "Minas Gerais",
+                            Population = 21411923
                         },
                         new
                         {
                             Id = 14,
-                            Name = "Pará"
+                            Name = "Pará",
+                            Population = 8777124
                         },
                         new
                         {
                             Id = 15,
-                            Name = "Paraíba"
+                            Name = "Paraíba",
+                            Population = 4059905
                         },
                         new
                         {
                             Id = 16,
-                            Name = "Paraná"
+                            Name = "Paraná",
+                            Population = 11597484
                         },
                         new
                         {
                             Id = 17,
-                            Name = "Pernambuco"
+                            Name = "Pernambuco",
+                            Population = 9674793
                         },
                         new
                         {
                             Id = 18,
-                            Name = "Piauí"
+                            Name = "Piauí",
+                            Population = 3289290
                         },
                         new
                         {
                             Id = 19,
-                            Name = "Rio de Janeiro"
+                            Name = "Rio de Janeiro",
+                            Population = 17463349
                         },
                         new
                         {
                             Id = 20,
-                            Name = "Rio Grande do Norte"
+                            Name = "Rio Grande do Norte",
+                            Population = 3560903
                         },
                         new
                         {
                             Id = 21,
-                            Name = "Rio Grande do Sul"
+                            Name = "Rio Grande do Sul",
+                            Population = 11466630
                         },
                         new
                         {
                             Id = 22,
-                            Name = "Rondônia"
+                            Name = "Rondônia",
+                            Population = 1815278
                         },
                         new
                         {
                             Id = 23,
-                            Name = "Roraima"
+                            Name = "Roraima",
+                            Population = 652713
                         },
                         new
                         {
                             Id = 24,
-                            Name = "Santa Catarina"
+                            Name = "Santa Catarina",
+                            Population = 7338443
                         },
                         new
                         {
                             Id = 25,
-                            Name = "São Paulo"
+                            Name = "São Paulo",
+                            Population = 41262199
                         },
                         new
                         {
                             Id = 26,
-                            Name = "Sergipe"
+                            Name = "Sergipe",
+                            Population = 2338474
                         },
                         new
                         {
                             Id = 27,
-                            Name = "Tocantins"
+                            Name = "Tocantins",
+                            Population = 1607363
                         });
                 });
 #pragma warning restore 612, 618

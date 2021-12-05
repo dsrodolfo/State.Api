@@ -435,3 +435,4 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Test\bin\Debug\net6.0\
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Test\bin\Debug\net6.0\Npgsql.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Test\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Test\bin\Debug\net6.0\System.Collections.Immutable.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Test\bin\Debug\net6.0\AutoMapper.dll
