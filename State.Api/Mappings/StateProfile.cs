@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using State.Api.Entities;
 using State.Api.Models.Response;
+using State.Domain.Entities;
 
 namespace State.Api.Mappings
 {

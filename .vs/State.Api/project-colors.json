@@ -30,7 +30,17 @@
       "ProjectGuid": "8022b145-73a9-4ec4-a7df-23775f099eec",
       "DisplayName": "State.Test",
       "ColorIndex": 4
+    },
+    "7e0a5d58-c96d-4b2b-a9e1-e6a47509d0f4": {
+      "ProjectGuid": "7e0a5d58-c96d-4b2b-a9e1-e6a47509d0f4",
+      "DisplayName": "State.Infrastructure",
+      "ColorIndex": 5
+    },
+    "d11bb25a-ec5c-474f-b4f1-30cdd9fd2e0e": {
+      "ProjectGuid": "d11bb25a-ec5c-474f-b4f1-30cdd9fd2e0e",
+      "DisplayName": "State.Domain",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 7
 }

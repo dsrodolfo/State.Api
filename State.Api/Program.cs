@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using State.Api.Interfaces;
 using State.Api.Mappings;
-using State.Api.Repositories;
 using State.Api.Services;
+using State.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

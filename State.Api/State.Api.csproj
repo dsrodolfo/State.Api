@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -23,6 +22,10 @@
 
   <ItemGroup>
     <Folder Include="Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\State.Infrastructure\State.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using State.Api.Entities;
 using State.Api.Extensions;
 using State.Api.Interfaces;
 using State.Api.Models.Response;
-using State.Api.Repositories;
+using State.Domain.Entities;
+using State.Infrastructure.Repositories;
 using System.IO.Compression;
 using System.Reflection;
 

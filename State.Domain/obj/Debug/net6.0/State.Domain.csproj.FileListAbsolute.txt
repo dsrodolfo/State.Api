@@ -1,0 +1,12 @@
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\bin\Debug\net6.0\State.Domain.deps.json
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\bin\Debug\net6.0\State.Domain.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\bin\Debug\net6.0\ref\State.Domain.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\bin\Debug\net6.0\State.Domain.pdb
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.GlobalUsings.g.cs
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.AssemblyInfoInputs.cache
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.AssemblyInfo.cs
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\ref\State.Domain.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.pdb
