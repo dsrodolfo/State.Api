@@ -10,3 +10,4 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\ref\State.Domain.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.pdb
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Domain\obj\Debug\net6.0\State.Domain.csproj.AssemblyReference.cache

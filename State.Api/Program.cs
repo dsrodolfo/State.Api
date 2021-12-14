@@ -12,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IStateService, StateService>();
+builder.Services.AddTransient<IStateServiceXMLTarget, StateServiceXMLAdapter>();
 builder.Services.AddTransient<StateRepository>();
 
 var connectionString = builder.Configuration.GetSection("DbContextSettings")["ConnectionString"];
@@ -36,6 +37,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+app.MapGet("/State/xml/getAll", ([FromServices] IStateServiceXMLTarget stateServiceXML) =>
+{
+    var xmlFile = stateServiceXML.GetAllStatesAsXML();
+
+    return xmlFile.OuterXml;
+});
 
 app.MapGet("/State/getAll", ([FromServices] IStateService stateService) =>
 {

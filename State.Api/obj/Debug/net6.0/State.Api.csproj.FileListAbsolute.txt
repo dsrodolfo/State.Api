@@ -105,3 +105,4 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\obj\Debug\net6.0\r
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\obj\Debug\net6.0\State.Api.pdb
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\obj\Debug\net6.0\State.Api.genruntimeconfig.cache
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\obj\Debug\net6.0\State.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
