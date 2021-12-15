@@ -1,9 +1,10 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using State.Api.Interfaces;
-using State.Api.Mappings;
-using State.Api.Services;
+using State.Application.Interfaces;
+using State.Application.Mappings;
+using State.Application.Services;
+using State.Infrastructure.Context;
 using State.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);

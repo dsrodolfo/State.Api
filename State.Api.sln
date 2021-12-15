@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State.Api", "State.Api\Stat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State.Test", "State.Test\State.Test.csproj", "{8022B145-73A9-4EC4-A7DF-23775F099EEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State.Infrastructure", "State.Infrastructure\State.Infrastructure.csproj", "{7E0A5D58-C96D-4B2B-A9E1-E6A47509D0F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State.Infrastructure", "State.Infrastructure\State.Infrastructure.csproj", "{7E0A5D58-C96D-4B2B-A9E1-E6A47509D0F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State.Domain", "State.Domain\State.Domain.csproj", "{D11BB25A-EC5C-474F-B4F1-30CDD9FD2E0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State.Domain", "State.Domain\State.Domain.csproj", "{D11BB25A-EC5C-474F-B4F1-30CDD9FD2E0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State.Application", "State.Application\State.Application.csproj", "{401ABF48-3394-446C-9A42-FCD76370C5A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D11BB25A-EC5C-474F-B4F1-30CDD9FD2E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D11BB25A-EC5C-474F-B4F1-30CDD9FD2E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D11BB25A-EC5C-474F-B4F1-30CDD9FD2E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{401ABF48-3394-446C-9A42-FCD76370C5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401ABF48-3394-446C-9A42-FCD76370C5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401ABF48-3394-446C-9A42-FCD76370C5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401ABF48-3394-446C-9A42-FCD76370C5A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

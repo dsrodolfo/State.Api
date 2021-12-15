@@ -1,9 +1,3 @@
-C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.GlobalUsings.g.cs
-C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.AssemblyInfo.cs
-C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\bin\Debug\net6.0\State.Infrastructure.deps.json
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\bin\Debug\net6.0\State.Infrastructure.runtimeconfig.json
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\bin\Debug\net6.0\State.Infrastructure.dll
@@ -11,6 +5,11 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\bin\Deb
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\bin\Debug\net6.0\State.Infrastructure.pdb
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\bin\Debug\net6.0\State.Domain.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\bin\Debug\net6.0\State.Domain.pdb
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.AssemblyInfo.cs
+C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.csproj.CopyComplete
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\State.Infrastructure.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\State.Api\State.Infrastructure\obj\Debug\net6.0\ref\State.Infrastructure.dll

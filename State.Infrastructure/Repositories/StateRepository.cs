@@ -1,4 +1,5 @@
 ﻿using State.Domain.Entities;
+using State.Infrastructure.Context;
 
 namespace State.Infrastructure.Repositories
 {

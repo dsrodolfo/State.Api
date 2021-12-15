@@ -40,7 +40,17 @@
       "ProjectGuid": "d11bb25a-ec5c-474f-b4f1-30cdd9fd2e0e",
       "DisplayName": "State.Domain",
       "ColorIndex": 6
+    },
+    "930060d1-036c-4398-aa20-b7a021d4be53": {
+      "ProjectGuid": "930060d1-036c-4398-aa20-b7a021d4be53",
+      "DisplayName": "State.Application",
+      "ColorIndex": 7
+    },
+    "401abf48-3394-446c-9a42-fcd76370c5a1": {
+      "ProjectGuid": "401abf48-3394-446c-9a42-fcd76370c5a1",
+      "DisplayName": "State.Application",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 9
 }

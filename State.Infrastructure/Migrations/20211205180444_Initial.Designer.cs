@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using State.Infrastructure.Repositories;
+using State.Infrastructure.Context;
 
 #nullable disable
 
