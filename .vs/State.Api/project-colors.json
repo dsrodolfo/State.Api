@@ -28,7 +28,7 @@
     },
     "8022b145-73a9-4ec4-a7df-23775f099eec": {
       "ProjectGuid": "8022b145-73a9-4ec4-a7df-23775f099eec",
-      "DisplayName": "State.Test",
+      "DisplayName": "State.IntegrationTest",
       "ColorIndex": 4
     },
     "7e0a5d58-c96d-4b2b-a9e1-e6a47509d0f4": {
@@ -50,7 +50,27 @@
       "ProjectGuid": "401abf48-3394-446c-9a42-fcd76370c5a1",
       "DisplayName": "State.Application",
       "ColorIndex": 8
+    },
+    "aaf09956-f270-417c-8511-ebf09634a909": {
+      "ProjectGuid": "aaf09956-f270-417c-8511-ebf09634a909",
+      "DisplayName": "TestProject1",
+      "ColorIndex": 9
+    },
+    "2b393918-76e6-454e-ad78-7eeee270a560": {
+      "ProjectGuid": "2b393918-76e6-454e-ad78-7eeee270a560",
+      "DisplayName": "State.IntegrationTest",
+      "ColorIndex": 10
+    },
+    "72ae9f6a-213a-4e2f-b561-c67e861c5c34": {
+      "ProjectGuid": "72ae9f6a-213a-4e2f-b561-c67e861c5c34",
+      "DisplayName": "State.IntegrationTest",
+      "ColorIndex": 11
+    },
+    "3aa4f4a7-9a34-436f-9c53-56437ff63347": {
+      "ProjectGuid": "3aa4f4a7-9a34-436f-9c53-56437ff63347",
+      "DisplayName": "State.IntegrationTest",
+      "ColorIndex": 12
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 13
 }

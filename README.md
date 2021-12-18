@@ -5,10 +5,11 @@
 Brazilian States
 
 ## Endpoints
-The API has 3 endpoints:
+The API has 4 endpoints:
 
-+ State/getAll: Return the name of all brazilian states.
-+ State/getAll/{name}: Return the name of all brazilian states starting with a specific name.
++ State/xml/getAll: Return a XML File.
++ State/getAll: Return a list of brazilian states.
++ State/getAll/{name}: Return a list of all brazilian states starting with a specific name.
 + State/flags/download: Return a zip file containing the flags of all brazilian states.
 
 ## Tecnologies Used
@@ -30,4 +31,19 @@ The API has 3 endpoints:
 	 <td>6.0.0</td> 
      <td>2.4.1</td>  
   </tr>
+</table>
+
+## Design Patterns
+
+<table>
+	<tr>
+	  <td>Adapter</td>
+	</tr>
+</table>
+
+## Types of Testing
+<table>
+	<tr>
+	  <td>Integration Testing</td>
+	</tr>
 </table>

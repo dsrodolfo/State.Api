@@ -1,0 +1,6 @@
+{
+  "State.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Api",
+  "State.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Application",
+  "State.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Domain",
+  "State.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\State.Api\\State.Infrastructure"
+}
