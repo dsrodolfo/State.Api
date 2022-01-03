@@ -3,7 +3,7 @@ using State.Application.Extensions;
 using State.Application.Interfaces;
 using State.Application.Models.Response;
 using State.Domain.Entities;
-using State.Infrastructure.Repositories;
+using State.Infrastructure.Interfaces;
 using System.IO.Compression;
 using System.Reflection;
 
@@ -11,10 +11,10 @@ namespace State.Application.Services
 {
     public class StateService : IStateService
     {
-        private readonly StateRepository _stateRepository;
+        private readonly IStateRepository _stateRepository;
         private readonly IMapper _mapper;
 
-        public StateService(StateRepository stateRepository, IMapper mapper)
+        public StateService(IStateRepository stateRepository, IMapper mapper)
         {
             _stateRepository = stateRepository;
             _mapper = mapper;

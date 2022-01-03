@@ -5,6 +5,7 @@ using State.Application.Interfaces;
 using State.Application.Mappings;
 using State.Application.Services;
 using State.Infrastructure.Context;
+using State.Infrastructure.Interfaces;
 using State.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +15,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IStateService, StateService>();
 builder.Services.AddTransient<IStateServiceXMLTarget, StateServiceXMLAdapter>();
-builder.Services.AddTransient<StateRepository>();
+builder.Services.AddTransient<IStateRepository, StateRepository>();
 
 var connectionString = builder.Configuration.GetSection("DbContextSettings")["ConnectionString"];
 builder.Services.AddDbContext<StateDbContext>(options => 

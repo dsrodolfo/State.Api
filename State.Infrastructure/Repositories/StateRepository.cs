@@ -1,9 +1,10 @@
 ﻿using State.Domain.Entities;
 using State.Infrastructure.Context;
+using State.Infrastructure.Interfaces;
 
 namespace State.Infrastructure.Repositories
 {
-    public class StateRepository
+    public class StateRepository : IStateRepository
     {
         private readonly StateDbContext _context;
 

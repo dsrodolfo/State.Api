@@ -12,33 +12,34 @@ namespace State.Infrastructure.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 1, Name = "Acre", Population = 906876 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 2, Name = "Alagoas", Population = 3365351 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 3, Name = "Amapá", Population = 877613 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 4, Name = "Amazonas", Population = 4269995 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 5, Name = "Bahia", Population = 14985284 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 6, Name = "Ceará", Population = 9240580 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 7, Name = "Distrito Federal", Population = 3094325 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 8, Name = "Espírito Santo", Population = 4108508 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 9, Name = "Goiás", Population = 7206589 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 10, Name = "Maranhão", Population = 7153262 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 11, Name = "Mato Grosso", Population = 3567234 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 12, Name = "Mato Grosso do Sul", Population = 2839188 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 13, Name = "Minas Gerais", Population = 21411923 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 14, Name = "Pará", Population = 8777124 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 15, Name = "Paraíba", Population = 4059905 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 16, Name = "Paraná", Population = 11597484 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 17, Name = "Pernambuco", Population = 9674793 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 18, Name = "Piauí", Population = 3289290 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 19, Name = "Rio de Janeiro", Population = 17463349 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 20, Name = "Rio Grande do Norte", Population = 3560903 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 21, Name = "Rio Grande do Sul", Population = 11466630 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 22, Name = "Rondônia", Population = 1815278 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 23, Name = "Roraima", Population = 652713 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 24, Name = "Santa Catarina", Population = 7338443 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 25, Name = "São Paulo", Population = 41262199 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 26, Name = "Sergipe", Population = 2338474 });
-            modelBuilder.Entity<StateEntity>().HasData(new StateEntity { Id = 27, Name = "Tocantins", Population = 1607363 });
+            modelBuilder.Entity<StateEntity>()
+                .HasData(new StateEntity { Id = 1, Name = "Acre", Abbreviation = "AC", Population = 906876 },
+                         new StateEntity { Id = 2, Name = "Alagoas", Abbreviation = "AL", Population = 3365351 },
+                         new StateEntity { Id = 3, Name = "Amapá", Abbreviation = "AP", Population = 877613 },
+                         new StateEntity { Id = 4, Name = "Amazonas", Abbreviation = "AM", Population = 4269995 },
+                         new StateEntity { Id = 5, Name = "Bahia", Abbreviation = "BA", Population = 14985284 },
+                         new StateEntity { Id = 6, Name = "Ceará", Abbreviation = "CE", Population = 9240580 },
+                         new StateEntity { Id = 7, Name = "Distrito Federal", Abbreviation = "DF", Population = 3094325 },
+                         new StateEntity { Id = 8, Name = "Espírito Santo", Abbreviation = "ES", Population = 4108508 },
+                         new StateEntity { Id = 9, Name = "Goiás", Abbreviation = "GO", Population = 7206589 },
+                         new StateEntity { Id = 10, Name = "Maranhão", Abbreviation = "MA", Population = 7153262 },
+                         new StateEntity { Id = 11, Name = "Mato Grosso", Abbreviation = "MT", Population = 3567234 },
+                         new StateEntity { Id = 12, Name = "Mato Grosso do Sul", Abbreviation = "MS", Population = 2839188 },
+                         new StateEntity { Id = 13, Name = "Minas Gerais", Abbreviation = "MG", Population = 21411923 },
+                         new StateEntity { Id = 14, Name = "Pará", Abbreviation = "PA", Population = 8777124 },
+                         new StateEntity { Id = 15, Name = "Paraíba", Abbreviation = "PB", Population = 4059905 },
+                         new StateEntity { Id = 16, Name = "Paraná", Abbreviation = "PR", Population = 11597484 },
+                         new StateEntity { Id = 17, Name = "Pernambuco", Abbreviation = "PE", Population = 9674793 },
+                         new StateEntity { Id = 18, Name = "Piauí", Abbreviation = "PI", Population = 3289290 },
+                         new StateEntity { Id = 19, Name = "Rio de Janeiro", Abbreviation = "RJ", Population = 17463349 },
+                         new StateEntity { Id = 20, Name = "Rio Grande do Norte", Abbreviation = "RN", Population = 3560903 },
+                         new StateEntity { Id = 21, Name = "Rio Grande do Sul", Abbreviation = "RS", Population = 11466630 },
+                         new StateEntity { Id = 22, Name = "Rondônia", Abbreviation = "RO", Population = 1815278 },
+                         new StateEntity { Id = 23, Name = "Roraima", Abbreviation = "RR", Population = 652713 },
+                         new StateEntity { Id = 24, Name = "Santa Catarina", Abbreviation = "SC", Population = 7338443 },
+                         new StateEntity { Id = 25, Name = "São Paulo", Abbreviation = "SP", Population = 41262199 },
+                         new StateEntity { Id = 26, Name = "Sergipe", Abbreviation = "SE", Population = 2338474 },
+                         new StateEntity { Id = 27, Name = "Tocantins", Abbreviation = "TO", Population = 1607363 });
         }
     }
 }
