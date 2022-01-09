@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using State.Application.Models.Response;
+using State.Application.Models.Responses;
 using State.Domain.Entities;
 
 namespace State.Application.Mappings

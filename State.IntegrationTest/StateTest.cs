@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using State.Application.Models.Response;
+using State.Application.Models.Responses;
 using System.Net;
 using System.Threading.Tasks;
 using System.Xml;

@@ -1,4 +1,4 @@
-﻿using State.Application.Models.Response;
+﻿using State.Application.Models.Responses;
 
 namespace State.Application.Interfaces
 {

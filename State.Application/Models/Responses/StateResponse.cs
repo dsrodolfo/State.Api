@@ -1,4 +1,4 @@
-﻿namespace State.Application.Models.Response
+﻿namespace State.Application.Models.Responses
 {
     public class StateResponse
     {

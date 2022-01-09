@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using State.Application.Extensions;
 using State.Application.Interfaces;
-using State.Application.Models.Response;
+using State.Application.Models.Responses;
 using State.Domain.Entities;
 using State.Infrastructure.Interfaces;
 using System.IO.Compression;
