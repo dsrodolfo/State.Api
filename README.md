@@ -1,4 +1,4 @@
- <h1 align="center">State.Api</h1>
+ <h1 align="center">State API</h1>
 
 ![brazilian-states-logo](https://user-images.githubusercontent.com/25781203/141661896-50fe54e4-106c-4f71-8672-b70acad809e1.jpg)
 
