@@ -4,6 +4,6 @@ namespace State.Application.Interfaces
 {
     public interface IStateServiceXMLTarget
     {
-        XmlDocument GetAllStatesAsXML();
+        XmlDocument? GetAllStatesAsXML();
     }
 }

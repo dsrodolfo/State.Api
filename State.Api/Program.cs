@@ -43,7 +43,7 @@ app.MapGet("/State/xml/getAll", ([FromServices] IStateServiceXMLTarget stateServ
 {
     var xmlFile = stateServiceXML.GetAllStatesAsXML();
 
-    return xmlFile.OuterXml;
+    return xmlFile?.OuterXml;
 });
 
 app.MapGet("/State/getAll", ([FromServices] IStateService stateService) =>

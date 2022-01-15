@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using State.Infrastructure.Context;
 
 #nullable disable
@@ -9,7 +11,7 @@ using State.Infrastructure.Context;
 namespace State.Infrastructure.Migrations
 {
     [DbContext(typeof(StateDbContext))]
-    [Migration("20211205180444_Initial")]
+    [Migration("20220115174736_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,13 +23,23 @@ namespace State.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("State.Api.Entities.StateEntity", b =>
+            modelBuilder.Entity("State.Domain.Entities.StateEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Abbreviation")
+                        .IsRequired()
+                        .HasMaxLength(2)
+                        .HasColumnType("character varying(2)");
+
+                    b.Property<string>("Capital")
+                        .IsRequired()
+                        .HasMaxLength(14)
+                        .HasColumnType("character varying(14)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -45,162 +57,216 @@ namespace State.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
+                            Abbreviation = "AC",
+                            Capital = "Rio Branco",
                             Name = "Acre",
                             Population = 906876
                         },
                         new
                         {
                             Id = 2,
+                            Abbreviation = "AL",
+                            Capital = "Maceió",
                             Name = "Alagoas",
                             Population = 3365351
                         },
                         new
                         {
                             Id = 3,
+                            Abbreviation = "AP",
+                            Capital = "Macapá",
                             Name = "Amapá",
                             Population = 877613
                         },
                         new
                         {
                             Id = 4,
+                            Abbreviation = "AM",
+                            Capital = "Manaus",
                             Name = "Amazonas",
                             Population = 4269995
                         },
                         new
                         {
                             Id = 5,
+                            Abbreviation = "BA",
+                            Capital = "Salvador",
                             Name = "Bahia",
                             Population = 14985284
                         },
                         new
                         {
                             Id = 6,
+                            Abbreviation = "CE",
+                            Capital = "Fortaleza",
                             Name = "Ceará",
                             Population = 9240580
                         },
                         new
                         {
                             Id = 7,
+                            Abbreviation = "DF",
+                            Capital = "Brasília",
                             Name = "Distrito Federal",
                             Population = 3094325
                         },
                         new
                         {
                             Id = 8,
+                            Abbreviation = "ES",
+                            Capital = "Vitória",
                             Name = "Espírito Santo",
                             Population = 4108508
                         },
                         new
                         {
                             Id = 9,
+                            Abbreviation = "GO",
+                            Capital = "Goiânia",
                             Name = "Goiás",
                             Population = 7206589
                         },
                         new
                         {
                             Id = 10,
+                            Abbreviation = "MA",
+                            Capital = "São Luís",
                             Name = "Maranhão",
                             Population = 7153262
                         },
                         new
                         {
                             Id = 11,
+                            Abbreviation = "MT",
+                            Capital = "Cuiabá",
                             Name = "Mato Grosso",
                             Population = 3567234
                         },
                         new
                         {
                             Id = 12,
+                            Abbreviation = "MS",
+                            Capital = "Campo Grande",
                             Name = "Mato Grosso do Sul",
                             Population = 2839188
                         },
                         new
                         {
                             Id = 13,
+                            Abbreviation = "MG",
+                            Capital = "Belo Horizonte",
                             Name = "Minas Gerais",
                             Population = 21411923
                         },
                         new
                         {
                             Id = 14,
+                            Abbreviation = "PA",
+                            Capital = "Belém",
                             Name = "Pará",
                             Population = 8777124
                         },
                         new
                         {
                             Id = 15,
+                            Abbreviation = "PB",
+                            Capital = "João Pessoa",
                             Name = "Paraíba",
                             Population = 4059905
                         },
                         new
                         {
                             Id = 16,
+                            Abbreviation = "PR",
+                            Capital = "Curitiba",
                             Name = "Paraná",
                             Population = 11597484
                         },
                         new
                         {
                             Id = 17,
+                            Abbreviation = "PE",
+                            Capital = "Recife",
                             Name = "Pernambuco",
                             Population = 9674793
                         },
                         new
                         {
                             Id = 18,
+                            Abbreviation = "PI",
+                            Capital = "Teresina",
                             Name = "Piauí",
                             Population = 3289290
                         },
                         new
                         {
                             Id = 19,
+                            Abbreviation = "RJ",
+                            Capital = "Rio de Janeiro",
                             Name = "Rio de Janeiro",
                             Population = 17463349
                         },
                         new
                         {
                             Id = 20,
+                            Abbreviation = "RN",
+                            Capital = "Natal",
                             Name = "Rio Grande do Norte",
                             Population = 3560903
                         },
                         new
                         {
                             Id = 21,
+                            Abbreviation = "RS",
+                            Capital = "Porto Alegre",
                             Name = "Rio Grande do Sul",
                             Population = 11466630
                         },
                         new
                         {
                             Id = 22,
+                            Abbreviation = "RO",
+                            Capital = "Porto Velho",
                             Name = "Rondônia",
                             Population = 1815278
                         },
                         new
                         {
                             Id = 23,
+                            Abbreviation = "RR",
+                            Capital = "Boa Vista",
                             Name = "Roraima",
                             Population = 652713
                         },
                         new
                         {
                             Id = 24,
+                            Abbreviation = "SC",
+                            Capital = "Florianópolis",
                             Name = "Santa Catarina",
                             Population = 7338443
                         },
                         new
                         {
                             Id = 25,
+                            Abbreviation = "SP",
+                            Capital = "São Paulo",
                             Name = "São Paulo",
                             Population = 41262199
                         },
                         new
                         {
                             Id = 26,
+                            Abbreviation = "SE",
+                            Capital = "Aracaju",
                             Name = "Sergipe",
                             Population = 2338474
                         },
                         new
                         {
                             Id = 27,
+                            Abbreviation = "TO",
+                            Capital = "Palmas",
                             Name = "Tocantins",
                             Population = 1607363
                         });

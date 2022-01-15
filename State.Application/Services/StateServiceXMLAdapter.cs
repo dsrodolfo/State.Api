@@ -13,7 +13,7 @@ namespace State.Application.Services
             _stateService = stateService;
         }
 
-        public XmlDocument GetAllStatesAsXML()
+        public XmlDocument? GetAllStatesAsXML()
         {
             var states = _stateService.GetAllStates();
             string jsonContent = JsonConvert.SerializeObject(states);
