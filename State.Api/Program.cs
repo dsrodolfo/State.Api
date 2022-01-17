@@ -18,7 +18,7 @@ builder.Services.AddTransient<IStateServiceXMLTarget, StateServiceXMLAdapter>();
 builder.Services.AddTransient<IStateRepository, StateRepository>();
 
 var connectionString = builder.Configuration.GetSection("DbContextSettings")["ConnectionString"];
-builder.Services.AddDbContext<StateDbContext>(options => options.UseNpgsql(connectionString));
+builder.Services.AddDbContext<IStateDbContext, StateDbContext>(options => options.UseNpgsql(connectionString));
 
 var mapperConfig = new MapperConfiguration(mc =>
 {

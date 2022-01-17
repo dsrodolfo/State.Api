@@ -1,13 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using State.Domain.Entities;
+using State.Infrastructure.Interfaces;
 
 namespace State.Infrastructure.Context
 {
-    public class StateDbContext : DbContext
+    public class StateDbContext : DbContext, IStateDbContext
     {
         public StateDbContext(DbContextOptions<StateDbContext> options)
             : base(options) { }
 
+        public DbContext Instance => this;
         public DbSet<StateEntity> State { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
