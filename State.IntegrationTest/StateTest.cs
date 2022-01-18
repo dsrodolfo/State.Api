@@ -73,5 +73,16 @@ namespace State.IntegrationTest
 
             Assert.Equal(HttpStatusCode.OK, response.Result.StatusCode);
         }
+
+        [Fact]
+        public async Task Download_Csv_ReturnsOK()
+        {
+            await using var stateApp = new StateApplication();
+
+            var client = stateApp.CreateClient();
+            var response = client.GetAsync("/State/csv/download");
+
+            Assert.Equal(HttpStatusCode.OK, response.Result.StatusCode);
+        }
     }
 }

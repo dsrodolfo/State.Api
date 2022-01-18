@@ -147,6 +147,14 @@
               "target": "Package",
               "version": "[10.1.1, )"
             },
+            "ChoETL": {
+              "target": "Package",
+              "version": "[1.2.1.41, )"
+            },
+            "ChoETL.JSON": {
+              "target": "Package",
+              "version": "[1.2.1.41, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"

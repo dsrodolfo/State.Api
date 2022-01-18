@@ -5,12 +5,13 @@
 Brazilian States
 
 ## Endpoints
-The API has 4 endpoints:
+The API has 5 endpoints:
 
-+ State/xml/getAll: Return a XML File.
-+ State/getAll: Return a list of brazilian states.
-+ State/getAll/{name}: Return a list of all brazilian states starting with a specific name.
-+ State/flags/download: Return a zip file containing the flags of all brazilian states.
++ State/xml/getAll: Returns a XML file.
++ State/getAll: Returns a list of brazilian states.
++ State/getAll/{name}: Returns a list of all brazilian states starting with a specific name.
++ State/flags/download: Returns a zip file containing the flags of all brazilian states.
++ State/csv/download: Returns a CSV file.
 
 ## Tecnologies Used
 
@@ -22,6 +23,7 @@ The API has 4 endpoints:
 	 <td>AutoMapper</td>  
 	 <td>Entity Framework Core</td>  
      <td>xUnit</td>
+	 <td>ChoETL</td>	
   </tr>
   <tr>
      <td>10.0</td>  
@@ -30,6 +32,7 @@ The API has 4 endpoints:
 	 <td>10.1.1</td>  
 	 <td>6.0.0</td> 
      <td>2.4.1</td>  
+	 <td>1.2.1.41</td>	
   </tr>
 </table>
 
