@@ -5,11 +5,11 @@ using System.Text;
 
 namespace State.Application.Services
 {
-    public class StateServiceByteAdapter : IStateServiceByteTarget
+    public class StateServiceCsvAdapter : IStateServiceCsvTarget
     {
         private readonly IStateService _stateService;
 
-        public StateServiceByteAdapter(IStateService stateService)
+        public StateServiceCsvAdapter(IStateService stateService)
         {
             _stateService = stateService;
         }

@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IStateService, StateService>();
-builder.Services.AddTransient<IStateServiceByteTarget, StateServiceByteAdapter>();
+builder.Services.AddTransient<IStateServiceCsvTarget, StateServiceCsvAdapter>();
 builder.Services.AddTransient<IStateServiceXMLTarget, StateServiceXMLAdapter>();
 builder.Services.AddTransient<IStateRepository, StateRepository>();
 
@@ -68,9 +68,9 @@ app.MapGet("/State/flags/download", ([FromServices] IStateService stateService) 
         Results.NotFound();
 });
 
-app.MapGet("/State/csv/download", ([FromServices] IStateServiceByteTarget stateServiceByte) =>
+app.MapGet("/State/csv/download", ([FromServices] IStateServiceCsvTarget stateServiceCsv) =>
 {
-    var bytes = stateServiceByte.GetAllStatesAsBytes();
+    var bytes = stateServiceCsv.GetAllStatesAsBytes();
 
     return Results.File(bytes, "text/csv", "brazilian-states.csv");
 });

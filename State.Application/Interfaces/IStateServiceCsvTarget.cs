@@ -1,6 +1,6 @@
 ﻿namespace State.Application.Interfaces
 {
-    public interface IStateServiceByteTarget
+    public interface IStateServiceCsvTarget
     {
         byte[] GetAllStatesAsBytes();
     }
