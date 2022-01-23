@@ -26,5 +26,8 @@ namespace State.Domain.Entities
         public string Capital { get; set; }
 
         public int Population { get; set; }
+
+        [MaxLength(60)]
+        public string Gentilic { get; set; }
     }
 }

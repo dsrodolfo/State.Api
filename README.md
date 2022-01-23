@@ -41,6 +41,7 @@ The API has 5 endpoints:
 <table>
 	<tr>
 	  <td>Adapter</td>
+	  <td>Repository</td>
 	</tr>
 </table>
 
