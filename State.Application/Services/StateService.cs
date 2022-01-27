@@ -11,13 +11,13 @@ namespace State.Application.Services
 {
     public class StateService : IStateService
     {
-        private readonly IStateRepository _stateRepository;
         private readonly IMapper _mapper;
+        private readonly IStateRepository _stateRepository;
 
-        public StateService(IStateRepository stateRepository, IMapper mapper)
+        public StateService(IMapper mapper, IStateRepository stateRepository)
         {
-            _stateRepository = stateRepository;
             _mapper = mapper;
+            _stateRepository = stateRepository;
         }
 
         public IEnumerable<StateResponse> GetAllStates()

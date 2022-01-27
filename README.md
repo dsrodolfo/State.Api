@@ -36,18 +36,25 @@ The API has 5 endpoints:
   </tr>
 </table>
 
+## Types of Testing
+<table>
+	<tr>
+	  <td>Integration Testing</td>
+	</tr>
+</table>
+
 ## Design Patterns
 
 <table>
 	<tr>
 	  <td>Adapter</td>
-	  <td>Repository</td>
 	</tr>
 </table>
 
-## Types of Testing
+## SOLID Principles
+
 <table>
 	<tr>
-	  <td>Integration Testing</td>
+	  <td>Dependency Inversion</td>
 	</tr>
 </table>

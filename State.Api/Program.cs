@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using State.Application.Interfaces;
 using State.Application.Mappings;
+using State.Application.Models.Responses;
 using State.Application.Services;
 using State.Infrastructure.Context;
 using State.Infrastructure.Interfaces;
@@ -55,17 +56,21 @@ app.MapGet("/State/getAll", ([FromServices] IStateService stateService) =>
 app.MapGet("/State/getAll/{name}", ([FromServices] IStateService stateService, string name) =>
 {
     var states = stateService.GetAllStatesByName(name);
+    IResult result = states.Count() != 0 ?
+        Results.Ok(states) :
+        Results.NotFound(new GenericResponse("No state was found."));
 
-    return states.Count() != 0 ? Results.Ok(states) : Results.NotFound();
+    return result;
 });
 
 app.MapGet("/State/flags/download", ([FromServices] IStateService stateService) =>
 {
     string zipFileDirectory = stateService.DownloadFlags();
+    IResult result = !string.IsNullOrWhiteSpace(zipFileDirectory) ?
+        Results.File(zipFileDirectory, "application/zip", "brazilian-state-flags.zip") :
+        Results.NotFound(new GenericResponse("File not found."));
 
-    return !string.IsNullOrWhiteSpace(zipFileDirectory)? 
-        Results.File(zipFileDirectory, "application/zip", "brazilian-state-flags.zip") : 
-        Results.NotFound();
+    return result;
 });
 
 app.MapGet("/State/csv/download", ([FromServices] IStateServiceCsvTarget stateServiceCsv) =>
